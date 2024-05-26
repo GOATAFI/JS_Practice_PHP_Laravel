@@ -8,14 +8,13 @@
   <body></body>
 
   <script>
-
     // ---------Function declaration and call ------------
 
-    function addTwoNumbers(){
-        let num1 = 10;
-        let num2 = 20;
-        let num3 = num1+num2;
-        document.write(num3 + "<br>")
+    function addTwoNumbers() {
+      let num1 = 10;
+      let num2 = 20;
+      let num3 = num1 + num2;
+      document.write(num3 + "<br>");
     }
 
     addTwoNumbers();
@@ -26,26 +25,26 @@
 
     // Function with parameter
 
-    function writeMyName(name){
-        document.write(name + "<br>")
+    function writeMyName(name) {
+      document.write(name + "<br>");
     }
     writeMyName("Nahid");
     writeMyName("Parvez");
     writeMyName("Mafi");
 
     //---------Function return----------
-    //ekta function jokhon return kore , tokhon ja return kore , function ta tar soman hoye jay 
+    //ekta function jokhon return kore , tokhon ja return kore , function ta tar soman hoye jay
 
-    function addThreeNumbers(n1,n2,n3){
-        return n1+n2+n3;
+    function addThreeNumbers(n1, n2, n3) {
+      return n1 + n2 + n3;
     }
     //addThreeNumbers return kore 3 ta number er jogfol , tai jokhon ei function ta call korbo tokhon er maan hoye jabe parameter e deya 3 ta number er jogfoler soman
 
-    let newValue = addThreeNumbers(2,4,6);
+    let newValue = addThreeNumbers(2, 4, 6);
     document.write(newValue + "<br>");
 
-    function addStrings(){
-        return "Maf";
+    function addStrings() {
+      return "Maf";
     }
 
     let newString = addStrings() + "i";
@@ -53,23 +52,36 @@
 
     // --------Javascript Object---------
     let myPc = {
-        brand:"Lenovo",
-        screen:"15.6",
-        isLaptop:"Yes",
-        ram:"8GB",
-        disk:"512GB",
-        isSSD:true,
-        processor:"core i-5"
-    }
+      brand: "Lenovo",
+      screen: "15.6",
+      isLaptop: "Yes",
+      ram: "8GB",
+      disk: "512GB",
+      isSSD: true,
+      processor: "core i-5",
+    };
 
-    document.write(myPc['brand'] + "<br>");
+    document.write(myPc["brand"] + "<br>");
     document.write(myPc.isSSD + "<br>");
 
     //-------- Javascript Array -----------
 
-    let catagory = [ "Mango","Jackfruit","Jaam","Banana" ]
-    document.write(catagory[0]);
+    let catagory = ["Mango", "Jackfruit", "Jaam", "Banana"];
+    document.write(catagory[0]+"<br>");
 
+    //  --------- Looping over Array ----------
+    //----------- for loop ---------------
+    document.write("for loop in array" + "<br>");
+    let i;
+    for (i = 0; i < catagory.length; i++) {
+      document.write(catagory[i] + "<br>");
+    }
 
+    // ------------ for in loop -----------
+    // for in loop e shudu bole dite hoy kon array er upor cholbe , ar kichu bola lagbe nah
+    document.write("for in loop in array" + "<br>");
+    for (let item in catagory){
+        document.write(catagory[item] + "<br>");
+    }
   </script>
 </html>
