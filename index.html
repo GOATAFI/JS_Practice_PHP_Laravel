@@ -9,7 +9,7 @@
 
   <script>
 
-    // Function declaration and call 
+    // ---------Function declaration and call ------------
 
     function addTwoNumbers(){
         let num1 = 10;
@@ -33,7 +33,7 @@
     writeMyName("Parvez");
     writeMyName("Mafi");
 
-    //Function return
+    //---------Function return----------
     //ekta function jokhon return kore , tokhon ja return kore , function ta tar soman hoye jay 
 
     function addThreeNumbers(n1,n2,n3){
@@ -50,6 +50,21 @@
 
     let newString = addStrings() + "i";
     document.write(newString + "<br>");
+
+    // --------Javascript Object---------
+    let myPc = {
+        brand:"Lenovo",
+        screen:"15.6",
+        isLaptop:"Yes",
+        ram:"8GB",
+        disk:"512GB",
+        isSSD:true,
+        processor:"core i-5"
+    }
+
+    document.write(myPc['brand'] + "<br>");
+    document.write(myPc.isSSD);
+
 
 
   </script>
