@@ -114,7 +114,7 @@
 
     //------ JS Array Filter --------
 
-    let numArray = [90,9, 10, 51, 20, 30, 40, 50, 60, 70, 80];
+    let numArray = [90, 9, 10, 51, 20, 30, 40, 50, 60, 70, 80];
     document.write(numArray + "<br>");
     //50 er theke boro number gula ber kore ante chaytesi
     //filter method er vitor ekta callback function declare kore dibo jar kono name thakbe na
@@ -125,29 +125,39 @@
     let result2 = numArray.filter(function (item) {
       return item < 50;
     });
-    document.write(result +"<br>");
+    document.write(result + "<br>");
     document.write(result2 + "<br>");
 
     //----- JS Array Find & FindIndex ---------
     // find - condition er sathe jei element ta fist match korbe takei return korbe
     // findIndex - element return na kore index ta return korbe
 
-    let result3 = numArray.find(function(value){
+    let result3 = numArray.find(function (value) {
       return value < 35;
-    })
-    document.write(result3 +"<br>");
-    let result4 = numArray.findIndex(function(value){
-      return  value <50;
-    })
+    });
+    document.write(result3 + "<br>");
+    let result4 = numArray.findIndex(function (value) {
+      return value < 50;
+    });
 
     document.write(result4 + "<br>");
 
-
     // ------ JS forEach method --------
 
-    numArray.forEach(function(item){
+    numArray.forEach(function (item) {
       document.write(item + "<br>");
-    })
+    });
 
+    // ------- js array includes & indexOf method -------
+    //includes method - array te oi element ase kina , true ba false return kore
+    // indexOf - element ase ki nai ar thakle tar index koto seta ber kore dibe , na thakle -1 return korbe
+
+    let result5 = numArray.includes(80);
+    document.write(result5 + "<br>");
+
+    let result6 = numArray.indexOf(80);
+    document.write(result6 + "<br>");
+    let result7 = numArray.indexOf(110);
+    document.write(result7 + "<br>");
   </script>
 </html>
