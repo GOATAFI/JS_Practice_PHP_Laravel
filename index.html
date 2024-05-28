@@ -114,7 +114,7 @@
 
     //------ JS Array Filter --------
 
-    let numArray = [90, 10, 51, 20, 30, 40, 50, 60, 70, 80];
+    let numArray = [90,9, 10, 51, 20, 30, 40, 50, 60, 70, 80];
     document.write(numArray + "<br>");
     //50 er theke boro number gula ber kore ante chaytesi
     //filter method er vitor ekta callback function declare kore dibo jar kono name thakbe na
@@ -127,5 +127,23 @@
     });
     document.write(result +"<br>");
     document.write(result2 + "<br>");
+
+    //----- JS Array Find & FindIndex ---------
+    // find - condition er sathe jei element ta fist match korbe takei return korbe
+    // findIndex - element return na kore index ta return korbe
+
+    let result3 = numArray.find(function(value){
+      return value < 35;
+    })
+    document.write(result3 +"<br>");
+    let result4 = numArray.findIndex(function(value){
+      return  value <50;
+    })
+
+    document.write(result4 + "<br>");
+
+
+
+
   </script>
 </html>
