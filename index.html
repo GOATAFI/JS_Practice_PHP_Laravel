@@ -182,7 +182,15 @@
     // sort kore ascending e korlam then reverse method diye descending e shalay dilam
     // sort() method by default array k ascending order e sort kore
 
-    result10 = numArray.slice(1,4);
-    document.write(result10);
+    result10 = numArray.slice(1, 4);
+    document.write(result10 + "<br>");
+
+    // ----------- JS Array splice -------------
+    let numArray2 = [11, 12, 13, 14, 15, 16, 17];
+    //----numArray2.splice(index,removeCount,item)----
+    numArray2.splice(1,1);
+    document.write(numArray2 + "<br>"); // 12 k delete kore dibe
+    numArray2.splice(3,0,30);
+    document.write(numArray2);
   </script>
 </html>
