@@ -105,15 +105,27 @@
     document.write(arr3 + "<br>");
     document.write(arr4 + "<br>");
 
-    //------- JS Array Form Method --------
-    // String theke Array te convert korte chaile array.form() method use korte hobe
+    //------- JS Array Fromm Method --------
+    // String theke Array te convert korte chaile array.from() method use korte hobe
 
     let nameString = "Nahid Parvez Mafi";
     let nameArray = Array.from(nameString);
-    document.write(nameArray[0]);
+    document.write(nameArray[0] + "<br>");
 
+    //------ JS Array Filter --------
 
+    let numArray = [90, 10, 51, 20, 30, 40, 50, 60, 70, 80];
+    document.write(numArray + "<br>");
+    //50 er theke boro number gula ber kore ante chaytesi
+    //filter method er vitor ekta callback function declare kore dibo jar kono name thakbe na
 
-    
+    let result = numArray.filter(function (item) {
+      return item > 50;
+    });
+    let result2 = numArray.filter(function (item) {
+      return item < 50;
+    });
+    document.write(result +"<br>");
+    document.write(result2 + "<br>");
   </script>
 </html>
