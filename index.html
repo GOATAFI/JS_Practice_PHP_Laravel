@@ -67,7 +67,7 @@
     //-------- Javascript Array -----------
 
     let catagory = ["Mango", "Jackfruit", "Jaam", "Banana"];
-    document.write(catagory[0]+"<br>");
+    document.write(catagory[0] + "<br>");
 
     //  --------- Looping over Array ----------
     //----------- for loop ---------------
@@ -79,24 +79,41 @@
     // ------------ for in loop -----------
     // for in loop e shudu bole dite hoy kon array er upor cholbe , ar kichu bola lagbe nah
     document.write("for in loop in array" + "<br>");
-    for (let item in catagory){
-        document.write(catagory[item] + "<br>");
+    for (let item in catagory) {
+      document.write(catagory[item] + "<br>");
     }
     // -------- for in loop in object-------
-   let person ={
-    name:"Mafi",
-    age:24,
-    city:"Dhaka",
-    height : "5.7 feet"
-   }
+    let person = {
+      name: "Mafi",
+      age: 24,
+      city: "Dhaka",
+      height: "5.7 feet",
+    };
 
-   for (let item in person){
-    document.write(item + "<br>");
-    document.write(person[item] + "<br>");
-   }
-  
-  
-  
-  
+    for (let item in person) {
+      document.write(item + "<br>");
+      document.write(person[item] + "<br>");
+    }
+
+    //------ JS Array Contact Method --------
+
+    let arr1 = ["A", "B", "C"];
+    let arr2 = ["D", "E", "F"];
+
+    let arr3 = arr1.concat(arr2);
+    let arr4 = arr2.concat(arr1);
+    document.write(arr3 + "<br>");
+    document.write(arr4 + "<br>");
+
+    //------- JS Array Form Method --------
+    // String theke Array te convert korte chaile array.form() method use korte hobe
+
+    let nameString = "Nahid Parvez Mafi";
+    let nameArray = Array.from(nameString);
+    document.write(nameArray[0]);
+
+
+
+    
   </script>
 </html>
