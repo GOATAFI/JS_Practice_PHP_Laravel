@@ -76,12 +76,27 @@
     for (i = 0; i < catagory.length; i++) {
       document.write(catagory[i] + "<br>");
     }
-
     // ------------ for in loop -----------
     // for in loop e shudu bole dite hoy kon array er upor cholbe , ar kichu bola lagbe nah
     document.write("for in loop in array" + "<br>");
     for (let item in catagory){
         document.write(catagory[item] + "<br>");
     }
+    // -------- for in loop in object-------
+   let person ={
+    name:"Mafi",
+    age:24,
+    city:"Dhaka",
+    height : "5.7 feet"
+   }
+
+   for (let item in person){
+    document.write(item + "<br>");
+    document.write(person[item] + "<br>");
+   }
+  
+  
+  
+  
   </script>
 </html>
