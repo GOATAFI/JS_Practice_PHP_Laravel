@@ -205,10 +205,14 @@
     document.write(country.indexOf("B") + "<br>"); // given string er index return korbe
     document.write(country.lastIndexOf("a") + "<br>"); // ek-e string jotobar e ase , tar last position ta dibe
 
-    document.write(country.replace("desh","deshiiiiii") + "<br>"); //kono ekta substring k replace kore onno substring boshano jay
+    document.write(country.replace("desh", "deshiiiiii") + "<br>"); //kono ekta substring k replace kore onno substring boshano jay
 
-    document.write(country.substr(0,6)); //kototuku katbo tar starting index dibo ar kottuk length er katbo sheta dibo
+    document.write(country.substr(0, 6) + "<br>"); //kototuku katbo tar starting index dibo ar kottuk length er katbo sheta dibo
+
+    document.write(country.substring(6, 10) + "<br>"); //koi theke kata shuru korbo ta bollam then shuru theke length(1 theke shuru hobe , 0 theke nah) bole dibo
+    document.write(country.toLowerCase());
+    document.write(country.toUpperCase());
+    document.write(country.trim()); //space calculate kore nah
     
-
   </script>
 </html>
