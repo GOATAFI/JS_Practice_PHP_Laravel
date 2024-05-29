@@ -162,6 +162,7 @@
 
     // ------ js array Pop , Push , Reverse ----------
     let result8 = numArray.reverse();
+    document.write("Reversed-" + "<br>");
     document.write(result8 + "<br>");
 
     //array te notun vabe last e add korte chaile push method use korbo
@@ -177,7 +178,8 @@
     document.write(numArray + "<br>");
 
     // -------- js array slice and sort method ---------
-    result9 = numArray.sort().reverse();
+    result9 = numArray.sort();
+    document.write("Sorted Ascending- " + "<br>");
     document.write(result9 + "<br>");
     // sort kore ascending e korlam then reverse method diye descending e shalay dilam
     // sort() method by default array k ascending order e sort kore
@@ -188,9 +190,20 @@
     // ----------- JS Array splice -------------
     let numArray2 = [11, 12, 13, 14, 15, 16, 17];
     //----numArray2.splice(index,removeCount,item)----
-    numArray2.splice(1,1);
+    numArray2.splice(1, 1);
     document.write(numArray2 + "<br>"); // 12 k delete kore dibe
-    numArray2.splice(3,0,30);
-    document.write(numArray2);
+    numArray2.splice(3, 0, 30); // 3 no. index e 30 add korbe kono kichu remove kora chara , note that numArray2 array te kimtu 12 removed age thekei
+    document.write(numArray2 + "<br>");
+
+    // --------- JS String Methods ----------
+    let country = "Bangladesh";
+    document.write(country.charAt(5) + "<br>"); //index 5 er character ta ekhane peye jabo
+
+    let country2 = "Irelend";
+    document.write(country.concat(country2) + "<br>"); //duita string jora lagaye dey
+
+    document.write(country.indexOf("B") + "<br>"); // given string er index return korbe
+    document.write(country.lastIndexOf("a") + "<br>"); // ek-e string jotobar e ase , tar last position ta dibe
+
   </script>
 </html>
