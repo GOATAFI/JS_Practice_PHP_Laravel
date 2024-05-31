@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Practice</title>
   </head>
-  <body></body>
+  <body>
+    <button onclick="clickMe('click hoyeche')">Click</button>
+    <button onmouseover="clickMe('mouse over hoyeche')">Mouse Over</button>
+    <button onmouseout="clickMe('mouse out hoyeche')">Mouse Out</button>
+    <br>
+  </body>
 
   <script>
     // ---------Function declaration and call ------------
@@ -213,6 +218,11 @@
     document.write(country.toLowerCase());
     document.write(country.toUpperCase());
     document.write(country.trim()); //space calculate kore nah
-    
+
+    //---------- JS Common Events -----------
+    function clickMe(msg){
+      console.log(msg);
+    }
+
   </script>
 </html>
