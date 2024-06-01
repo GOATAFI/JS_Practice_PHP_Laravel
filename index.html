@@ -9,7 +9,12 @@
     <button onclick="clickMe('click hoyeche')">Click</button>
     <button onmouseover="clickMe('mouse over hoyeche')">Mouse Over</button>
     <button onmouseout="clickMe('mouse out hoyeche')">Mouse Out</button>
-    <br>
+    <br />
+    <h1 id="MyId"></h1>
+    <h1 class="Myclass">1</h1>
+    <h1 class="Myclass">2</h1>
+    <h1 class="Myclass">3</h1>
+    <h1 class="Myclass">4</h1>
   </body>
 
   <script>
@@ -220,9 +225,16 @@
     document.write(country.trim()); //space calculate kore nah
 
     //---------- JS Common Events -----------
-    function clickMe(msg){
+    function clickMe(msg) {
       console.log(msg);
     }
 
+    //------------ JS DOM --------------
+    // -------- get HTML Elements ----------
+    let MyElement = document.getElementById("MyId");
+    MyElement.innerHTML = 'Nahid Parvez Mafi';
+    let MyClasses = document.getElementsByClassName('Myclass');
+    MyClasses.innerHTML = 'hunu'; // vabsilam sobgulai change hobe , asole konotai change hoyna , array element er moto access korte hobe
+    MyClasses[2].innerHTML = "Honuu";
   </script>
 </html>
