@@ -15,6 +15,9 @@
     <h1 class="Myclass">2</h1>
     <h1 class="Myclass">3</h1>
     <h1 class="Myclass">4</h1>
+
+    <p></p>
+    <button onclick="Demo()">Click</button>
   </body>
 
   <script>
@@ -236,5 +239,13 @@
     let MyClasses = document.getElementsByClassName('Myclass');
     MyClasses.innerHTML = 'hunu'; // vabsilam sobgulai change hobe , asole konotai change hoyna , array element er moto access korte hobe
     MyClasses[2].innerHTML = "Honuu";
+
+    //--------- HTML DOM Document ----------
+    function Demo(){
+      let info = document.cookie;
+      let info2 = document.domain;
+      let info3 = document.title;
+      document.getElementsByTagName('p')[0].innerHTML = info3;
+    }
   </script>
 </html>
