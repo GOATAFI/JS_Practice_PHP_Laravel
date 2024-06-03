@@ -17,7 +17,11 @@
     <h1 class="Myclass">4</h1>
 
     <p></p>
-    <button onclick="Demo()">Click</button>
+    <button onclick="Demo()">Click</button> <br />
+
+    <input id="num1" /> <br />
+    <input id="num2" /> <br />
+    <button onclick="addTwoNumber()">Add</button> <br />
   </body>
 
   <script>
@@ -235,17 +239,28 @@
     //------------ JS DOM --------------
     // -------- get HTML Elements ----------
     let MyElement = document.getElementById("MyId");
-    MyElement.innerHTML = 'Nahid Parvez Mafi';
-    let MyClasses = document.getElementsByClassName('Myclass');
-    MyClasses.innerHTML = 'hunu'; // vabsilam sobgulai change hobe , asole konotai change hoyna , array element er moto access korte hobe
+    MyElement.innerHTML = "Nahid Parvez Mafi";
+    let MyClasses = document.getElementsByClassName("Myclass");
+    MyClasses.innerHTML = "hunu"; // vabsilam sobgulai change hobe , asole konotai change hoyna , array element er moto access korte hobe
     MyClasses[2].innerHTML = "Honuu";
 
     //--------- HTML DOM Document ----------
-    function Demo(){
+    function Demo() {
       let info = document.cookie;
       let info2 = document.domain;
       let info3 = document.title;
-      document.getElementsByTagName('p')[0].innerHTML = info3;
+      document.getElementsByTagName("p")[0].innerHTML = info3;
+    }
+
+    //--------- JS DOM with Form Input --------
+    function addTwoNumber() {
+      console.log("object");
+      let number1 = document.getElementById("num1").value;
+      console.log(number1);
+      let number2 = document.getElementById("num2").value;
+      // input field theke j value e pai sheta string format e pabo
+      let result11 = parseFloat(number1) + parseFloat(number2);
+      alert(result11);
     }
   </script>
 </html>
