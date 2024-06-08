@@ -6,16 +6,38 @@
     <title>Ajax Practice</title>
   </head>
   <body>
-    <button onclick="excGetRequest()">Execute</button>
+    <button onclick="excGetRequest()">Execute GET</button> <br>
+    <button onclick="excPostRequest()">Execute POST</button>
   </body>
   <script>
+    // ------------ ajax GET method --------------
     function excGetRequest() {
       let url = "https://jsonplaceholder.typicode.com/posts";
       let configuration = { method: "GET" };
       fetch(url, configuration)
         .then((response) => response.json())
-        .then((result) =>console.log(result))
+        .then((result) => console.log(result))
         .catch((err) => console.log(err));
+    }
+
+    // -------------- ajax POST Method ------------
+
+    function excPostRequest() {
+      let url = "https://jsonplaceholder.typicode.com/posts";
+      let bodyData = { Img: "123", Name: "123", Job: "123" };
+      let config = {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(bodyData),
+      };
+
+      fetch(url,config)
+        .then((response) => response.json())
+        .then((result) => console.log(result))
+        .catch(e => console.log(e))
     }
   </script>
 </html>
