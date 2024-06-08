@@ -36,9 +36,21 @@
     <input type="text" name="" id="MyInput" />
     <br />
     <br />
-    <button onclick="AddItem()">Add</button> <br>
-    <img src="https://images.unsplash.com/photo-1587064712555-6e206484699b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJsYWNrJTIwbWFufGVufDB8fDB8fHww" id="MyImg" alt="" width="200px" height="200px"> <br>
-    <button onclick="changeAttr()">Change</button> <br>
+    <button onclick="AddItem()">Add</button> <br />
+    <img
+      src="https://images.unsplash.com/photo-1587064712555-6e206484699b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJsYWNrJTIwbWFufGVufDB8fDB8fHww"
+      id="MyImg"
+      alt=""
+      width="200px"
+      height="200px"
+    />
+    <br />
+    <button onclick="changeAttr()">Change</button> <br />
+    <h1 id="myID">h1</h1>
+    <h6 class="myClass">h6</h6>
+    <p name="myName">p tag</p>
+    <h4>h4</h4>
+    <button onclick="FindElements()">Change</button> <br>
   </body>
 
   <script>
@@ -302,11 +314,19 @@
     }
 
     // ----------- JS Change Attribute value -----------
-    function changeAttr(){
-      let MyImg = document.getElementById('MyImg');
-      MyImg.src = "https://img.freepik.com/free-photo/young-happy-man-standing-isolated_171337-1127.jpg";
-      MyImg.width = "500"
-    
+    function changeAttr() {
+      let MyImg = document.getElementById("MyImg");
+      MyImg.src =
+        "https://img.freepik.com/free-photo/young-happy-man-standing-isolated_171337-1127.jpg";
+      MyImg.width = "500";
+    }
+
+    // ------- DOM Query Selector -----------
+    function FindElements() {
+      document.querySelector("h4").innerHTML = "h4 manipulated";
+      document.querySelector(".myClass").innerHTML = "h6 manipulated";
+      document.querySelector("#myID").innerHTML = "h1 manipulated";
+      document.querySelector('p[name = "myName"]').innerHTML = "p manipulated";
     }
   </script>
 </html>
