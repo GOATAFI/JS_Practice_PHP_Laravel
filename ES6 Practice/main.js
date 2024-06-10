@@ -37,3 +37,12 @@ let country = ['Dhaka','Barishal','Rajshahi'];
 for (jhela of country){
     console.log(jhela);
 }
+
+// -------- Arrow Function -------------
+
+let myArrow = (...X) => {
+    // console.log(X);
+    return X
+}
+
+console.log(myArrow(1,2,3,4,5));
