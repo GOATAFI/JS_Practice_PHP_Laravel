@@ -45,4 +45,52 @@ let myArrow = (...X) => {
     return X
 }
 
-console.log(myArrow(1,2,3,4,5));
+console.log(myArrow(1,2,3,4,5,6,7,8,9));
+
+
+
+let arr1 = ['a','b'];
+for(i in arr1){
+    console.log(i);
+    // shudu index return korbe array te for in loop use korle
+}
+
+let arr2 = ['c','d'];
+for(i of arr2){
+    console.log(i);
+    // array er item gulai return korbe for of loop use korle
+}
+
+let obj1 = {
+    oName : 'Maaffii',
+    className : 'Third Year'
+}
+
+for (i in obj1){
+    console.log(i);
+    // object er property gula show korbe
+ 
+}
+
+// for (i of obj1){
+//     // console.log(i);
+//     // for of loop object e kaj e kore na
+// }
+
+
+// ------------- Array Destructuring ----------------
+let deshes = ['Ban','Ind','Can','Ity'];
+let [a,,,d] = deshes;
+
+console.log(d);
+
+// --------------- Map ----------------------
+let myMap = new Map();
+
+myMap.set("key1","Bangladesh");
+myMap.set("key2","India");
+myMap.set("key3","Bhutan");
+myMap.set("key4","Sri-Lanka");
+
+console.log(myMap.keys());
+console.log(myMap.values());
