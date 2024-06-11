@@ -92,5 +92,14 @@ myMap.set("key2","India");
 myMap.set("key3","Bhutan");
 myMap.set("key4","Sri-Lanka");
 
-console.log(myMap.keys());
-console.log(myMap.values());
+// console.log(myMap.keys());
+// console.log(myMap.values());
+
+
+
+for(let myKey of myMap.keys()){
+    console.log(myKey);
+}
+for(let myValue of myMap.values()){
+    console.log(myValue);
+}
