@@ -91,11 +91,10 @@ myMap.set("key1","Bangladesh");
 myMap.set("key2","India");
 myMap.set("key3","Bhutan");
 myMap.set("key4","Sri-Lanka");
+myMap.set("key5","Sri-Lanka");
 
 // console.log(myMap.keys());
 // console.log(myMap.values());
-
-
 
 for(let myKey of myMap.keys()){
     console.log(myKey);
@@ -103,3 +102,17 @@ for(let myKey of myMap.keys()){
 for(let myValue of myMap.values()){
     console.log(myValue);
 }
+
+
+// ------------- Set --------------------
+
+//map ar set er parthokko hoilo map e same value 1 er beshibar rakhte parbo kintu set e duplicate value thakbe nah
+
+let mySet = new Set();
+
+mySet.add("Bangladesh");
+mySet.add("India");
+mySet.add("Bhutan");
+mySet.add("Bangladesh"); // duplicate value , gonay dhorbe nah
+
+console.log(mySet);
